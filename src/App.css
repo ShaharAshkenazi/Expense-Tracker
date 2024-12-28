@@ -1,0 +1,100 @@
+/* src/App.css */
+
+/* Reset default styles and set font family */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Container for the entire application */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header styling */
+header {
+  background-color: #8400ff;
+  color: #fff;
+  padding: 10px 0;
+}
+
+/* Navigation styling */
+nav {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo container styling */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+/* Logo text styling */
+.logo-text {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Highlight span in logo text */
+.logo-text span {
+  color: #ffcc00;
+}
+
+/* Navigation list styling */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Navigation item styling */
+nav li {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s; /* Add transition effect for color change */
+}
+
+/* Change color on navigation item hover */
+nav li:hover {
+  color: #ffcc00;
+}
+
+/* Main content area styling */
+main {
+  flex-grow: 1;
+}
+
+/* Content container styling */
+.content-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button styling with hover effect */
+.content-container button {
+  background-color: #8400ff;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition effect for background color change */
+}
+
+/* Change background color on button hover */
+.content-container button:hover {
+  background-color: #0056b3;
+}

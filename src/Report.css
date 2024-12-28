@@ -1,0 +1,200 @@
+/* General styling for container */
+.container {
+  overflow-x: auto;
+}
+
+/* Styling for search and category section */
+.search-and-category {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Styling for report form section */
+#report-form {
+  flex: 1;
+  padding: 10px;
+}
+
+/* Styling for button spacing */
+.button-spacing {
+  display: inline-block;
+  width: 20px; /* Adjust the width based on your preferred spacing */
+  margin-right: 10px; /* Adjust the margin based on your preferred spacing */
+}
+
+/* Styling for max category sum section */
+.max-category-sum {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+}
+
+.max-category-sum span {
+  font-weight: bold;
+  margin: 5px;
+}
+
+/* Styling for focused input in report table */
+#report-table input:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+
+/* Styling for input fields in report table */
+#report-table input {
+  width: 20%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+/* Styling for labels in report table */
+#report-table label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Styling for search by time section */
+.search-by-time {
+  margin: auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  width: 50%;
+  height: 200px;
+  border: 1px #ddd solid;
+}
+
+/* Styling for search group */
+.search-group {
+  margin-bottom: 20px;
+}
+
+/* Additional styling for report form */
+#report-form {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#report-form .form-group {
+  margin-bottom: 20px;
+}
+
+/* Styling for the table */
+table {
+  table-layout: fixed;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Styling for table headers */
+th {
+  color: #D5DDE5;
+  background: #42423F;
+  border-bottom: 4px solid hsl(276, 89%, 41%);
+  border-right: 1px solid #343a45;
+  font-size: 25px;
+  font-weight: 100;
+  padding: 5px;
+  vertical-align: middle;
+  text-align: left;
+}
+
+th:first-child {
+  border-top-left-radius: 5px;
+}
+
+th:last-child {
+  border-top-right-radius: 5px;
+  border-right: none;
+}
+
+/* Styling for table rows */
+tr {
+  border-top: 1px solid #C1C3D1;
+  border-bottom: 1px solid #C1C3D1;
+  color: #42423F;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+tr:first-child {
+  border-top: none;
+}
+
+tr:last-child {
+  border-bottom: none;
+}
+
+/* Styling for odd rows */
+tr:nth-child(odd) td {
+  background: #e2e2e2;
+}
+
+/* Styling for last row */
+tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+/* Styling for table cells */
+td {
+  background: #ffffff;
+  padding: 5px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 18px;
+  border-right: 1px solid #c2c3ce;
+}
+
+/* Styling for small text */
+.small-text {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Styling for sticky headers in the table */
+.value-of-table {
+  position: sticky;
+  top: 0;
+}
+
+.value-of-table th,
+.value-of-table td {
+  padding: 8px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  .value-of-table th,
+  .value-of-table td {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .form-group #months,
+  .form-group #years {
+    font-size: 12px;
+    width: 50px;
+  }
+
+  .max-category-sum {
+    font-size: 12px;
+    padding: 50px;
+    display: block;
+    text-align: center;
+  }
+
+  .l-heading {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
